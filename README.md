@@ -5,4 +5,5 @@ A collection of image processing algos from scratch.
 
 <ul><li>
 Moore's Boundry Tracing Algorithm
-</li></ul>
+</li>
+  <li>LSB Steganography</li></ul>
