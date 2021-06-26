@@ -1,0 +1,9 @@
+The image size (in pixels) can be specified either by using the width and height arguments, or with the single size argument. If size is used it should be a pair (width, height).
+
+The greyscale argument indicates whether input pixels are greyscale (when true), or colour (when false). The default is true unless palette= is used.
+
+The alpha argument (a boolean) specifies whether input pixels have an alpha channel (or not).
+
+bitdepth specifies the bit depth of the source pixel values. Each channel may have a different bit depth. Each source pixel must have values that are an integer between 0 and 2**bitdepth-1, where bitdepth is the bit depth for the corresponding channel. For example, 8-bit images have values between 0 and 255. PNG only stores images with bit depths of 1,2,4,8, or 16 (the same for all channels). When bitdepth is not one of these values or where channels have different bit depths, the next highest valid bit depth is selected, and an sBIT (significant bits) chunk is generated that specifies the original precision of the source image. In this case the supplied pixel values will be rescaled to fit the range of the selected bit depth.
+
+The PNG file format supports many bit depth / colour model combinations, but not all. The details are somewhat arcane (refer to the PNG specification for full details). Briefly: Bit depths < 8 (1,2,4) are only allowed with greyscale and colour mapped images; colour mapped images cannot have bit depth 16.
