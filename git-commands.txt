@@ -1,0 +1,12 @@
+git remote set-url origin git@github.com:username/respositoryName.git
+git remote -v
+xclip -selection clipboard <path to the file from where to get content
+
+#read from a file and copy to clipboard
+cat ./filename.extension|xcat -i -selection clipboard
+
+#change permissions easily
+r->read,w->write,x->execute,+->give,- ->deny
+sudo chmod +rwx filename/folder ->gives read,write and execute permission for that file or folder
+sudo chmod -rw filename/folder ->no read, no write for that file or folder
+
