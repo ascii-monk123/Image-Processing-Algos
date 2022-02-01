@@ -9,6 +9,7 @@ Moore's Boundry Tracing Algorithm
   <li>LSB Steganography</li>
   <li> Histogram based thresholding</li>
   <li> Global thresholding algorithm</li>
+  <li> Otsu's Optimal Global thresholding algorithm</li>
   </ul>
   </p>
  
